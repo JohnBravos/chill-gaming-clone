@@ -20,8 +20,15 @@ header {
 }
 
 .header-title {
+    text-align: center;
     margin: auto;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    width: fit-content;
+}
+
+.header-title p {
+    font-size: 1.25rem;
 }
 
 .header-logo {
@@ -45,9 +52,21 @@ header {
     width: 120px;
 }
 
+nav {
+    background: #212121;
+    border: none;
+    border-bottom: 7px solid #9b51e0;
+}
+
 nav ul{
     display: flex;
     justify-content: space-evenly;
     padding: 30px;
     list-style-type: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
 }
