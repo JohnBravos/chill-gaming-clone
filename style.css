@@ -7,6 +7,8 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
+    background: #000000;
+    background-color: #070707;
 }
 
 header {
@@ -15,10 +17,8 @@ header {
     justify-content: space-evenly;
     position: relative;
     padding: 30px;
-    background: #000000;
     min-height: 15vh;
     max-width: 100vw;
-    background-color: #070707;
 }
 
 .header-title {
@@ -82,4 +82,14 @@ nav ul a {
 nav ul li:first-child a {
     color: #9b51e0;
     padding: 10px 15px;
+}
+
+section {
+    color: #fff;
+    padding: 30px;
+    margin: auto;
+    max-width: 50vw;
+    display:grid;
+    justify-content: center;
+    border-right: 8px solid #9b51e0;
 }
