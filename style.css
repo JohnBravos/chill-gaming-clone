@@ -12,11 +12,11 @@ body {
 header {
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: relative;
     padding: 30px;
     background: #000000;
-    min-height: 25vh;
+    min-height: 15vh;
 }
 
 .header-title {
@@ -32,11 +32,11 @@ header {
 }
 
 .header-logo {
-    margin: auto 40px;
+    margin: auto;
 }
 
 .header-supp {
-    margin: auto 40px;
+    margin: auto;
 }
 
 .header-supp button {
@@ -69,4 +69,8 @@ nav ul a {
     text-decoration: none;
     color: #fff;
     font-size: 1.1rem;
+}
+
+nav ul li:first-child a {
+    color: #9b51e0;
 }
