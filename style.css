@@ -31,8 +31,8 @@ header {
     font-weight: 300;
 }
 
-.header-title p {
-    font-size: 1.25rem;
+.header-title h2 {
+    font-size: 1.15rem;
 }
 
 .header-logo {
@@ -114,9 +114,11 @@ section span {
     color: #9b51e0;
     font-size: 1.3rem;
     font-weight: 400;
+    margin: 15px 0px 15px 0px;
 }
 
 section p {
     font-size: 1.3rem;
     line-height: 1.8;
+    margin: 15px 0px 15px 0px;
 }
