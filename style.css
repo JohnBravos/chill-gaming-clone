@@ -8,7 +8,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     background: #000000;
-    background-color: #060707;
+    background-color: #060607;
 }
 
 /* Header Section*/
@@ -101,9 +101,9 @@ nav ul li:first-child a {
     width: 100vw;
 }
 
-/* Section Area */
+/* Main Section Area */
 
-section {
+.main-section {
     position: relative;
     color: #fff;
     margin: auto;
@@ -141,7 +141,7 @@ section {
     
 }
 
-/* Aside bar */
+/* Main Aside bar */
 
 aside {
     display: flex;
@@ -174,5 +174,19 @@ aside {
 aside img {
     width: 100%;
     margin-top: 25px;
+}
+
+/* Gaming reviews section */
+
+.gaming-news {
+    width: 100%;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    justify-content: center;
+}
+
+.gaming-news img {
+    width: 100%;
 }
 
