@@ -98,6 +98,7 @@ nav ul li:first-child a {
 .main-page {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 100vw;
 }
 
@@ -107,13 +108,13 @@ nav ul li:first-child a {
     position: relative;
     color: #fff;
     margin: auto;
-    padding: 0 20px 0px 20px;
-    width: 40%;
+    padding: 0 50px 0px 20px;
+    width: 880px;
     display: grid;
     justify-content: center;
     border-right: 3px solid #9b51e0;
     margin-top: 50px;
-    margin-left: 300px;
+    margin-left: 400px;
     /* border: 2px solid white; */
 }
 
@@ -146,14 +147,15 @@ nav ul li:first-child a {
 aside {
     display: flex;
     flex-direction: column;
-    margin: 50px 550px 0px 0px;
-    width: 15%;
+    margin: 50px 380px 0px 0px;
+    width: 250px;
     /* border: 2px solid white; */
     padding: 0 20px 0 20px;
 }
 
 .aside-header {
     color: #fff;
+    font-size: 1.2rem;
 }
 
 .aside-span {
@@ -180,13 +182,38 @@ aside img {
 
 .gaming-news {
     width: 100%;
-    padding: 100px;
+    padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 0.2fr);
     justify-content: center;
+    gap: 30px;
+}
+
+.gaming-news-header {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 40px 380px -30px 410px;
+    border-bottom: 5px solid #9b51e0;
 }
 
 .gaming-news img {
     width: 100%;
+    height: 230px;
+    margin-top: 50px;
 }
 
+.gaming-news-span {
+    color: #9b51e0;
+    font-size: 1.1rem;
+}
+
+.gaming-news-h1 {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.gaming-news-p {
+    color: gray;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
