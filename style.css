@@ -71,27 +71,33 @@ header {
 nav {
     background: #212121;
     border-bottom: 7px solid #9b51e0;
-    width: 100vw;
-    height: auto;
+    width: 100%;
 }
 
 nav ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 50px;
     padding: 25px 20px;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 
 .push-right {
-    margin-left: 60px;
+    margin-left: auto;
 }
 
 nav ul a {
     text-decoration: none;
     color: #fff;
     font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+    color: #9b51e0;
 }
 
 nav ul li:first-child a {
@@ -102,49 +108,50 @@ nav ul li:first-child a {
 /* Main feed section */
 
 .main-page {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 0.8fr;
+    gap: 50px;
+    max-width: 1400px;
+    margin: 50px auto 0 auto;
+    padding: 0 20px;
+    align-items: stretch;
 }
 
 /* Main Section Area */
 
 .main-section {
-    position: relative;
     color: #fff;
-    margin: auto;
-    padding: 0 50px 0px 20px;
-    width: 880px;
-    display: grid;
-    justify-content: center;
-    border-right: 3px solid #9b51e0;
-    margin-top: 50px;
-    margin-left: 400px;
-    /* border: 2px solid white; */
 }
 
 .main-section img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 .article-cat {
     color: #9b51e0;
-    font-size: 1.3rem;
-    font-weight: 400;
-    margin: 10px 0px 10px 0px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 15px 0px 10px 0px;
+    display: inline-block;
+}
+
+.main-section h1 {
+    font-size: 1.8rem;
+    margin: 10px 0;
 }
 
 .article-text {
-    font-size: 1.3rem;
-    line-height: 1.8;
-    margin: 10px 0px 10px 0px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 15px 0;
+    color: #ddd;
 }
 
 .article-auth {
-    color: grey;
-    font-size: 1.1rem;
+    color: #888;
+    font-size: 0.9rem;
     
 }
 
@@ -153,35 +160,59 @@ nav ul li:first-child a {
 aside {
     display: flex;
     flex-direction: column;
-    margin: 50px 380px 0px 0px;
-    width: 250px;
-    /* border: 2px solid white; */
-    padding: 0 20px 0 20px;
+    gap: 20px;
 }
 
 .aside-header {
     color: #fff;
     font-size: 1.2rem;
+    margin-bottom: 5px;
+    border-left: 5px solid #9b51e0;
+    padding-left: 15px;
+}
+
+.review-card {
+    background: #111;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s eases;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.review-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
 .aside-span {
     color: #9b51e0;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin: 12px 0 5px 0;
+    font-weight: 500;
 }
 
 .aside-h1 {
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    margin: 5px 0;
+    line-height: 1.4;
 }
 
 .aside-p {
-    color: gray;
-    margin-top: 5px;
-    font-size: 0.9rem;
-}
-
-aside img {
-    width: 100%;
-    margin-top: 25px;
+    color: #888;
+    font-size: 0.8rem;
+    margin-top: auto;
+    padding-top: 8px;
 }
 
 /* Gaming reviews section */
