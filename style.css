@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,6 +9,7 @@ body {
     -webkit-font-smoothing: antialiased;
     background: #000000;
     background-color: #060607;
+    overflow-x: hidden;
 }
 
 /* Header Section*/
@@ -17,31 +18,30 @@ header {
     color: #fff;
     display: flex;
     flex-direction:row;
-    justify-content: space-evenly;
-    position: relative;
-    padding: 30px;
-    min-height: 15vh;
-    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .header-title {
     text-align: center;
-    position: relative;
-    margin: auto;
-    font-size: 1.6rem;
-    font-weight: 300;
+}
+
+.header-title h1 {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .header-title h2 {
     font-size: 1.15rem;
+    font-weight: bold;
 }
 
 .header-logo {
-    margin: auto 0px auto 400px;
-}
-
-.header-supp {
-    margin: auto 400px auto 0px;
+    width: 120px;
 }
 
 .header-supp button {
@@ -51,8 +51,15 @@ header {
     border: none;
     color: #fff;
     font-size: 1.2rem;
-    padding: 0px 10px 0px 10px;
+    font-weight: bold;
     font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header-supp button:hover {
+    background: #562782;
+    transform: scale(1.05);
 }
 
 .header-logo img {
@@ -63,7 +70,6 @@ header {
 
 nav {
     background: #212121;
-    border: none;
     border-bottom: 7px solid #9b51e0;
     width: 100vw;
     height: auto;
@@ -99,7 +105,7 @@ nav ul li:first-child a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
 }
 
 /* Main Section Area */
