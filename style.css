@@ -301,3 +301,77 @@ aside {
     cursor: pointer;
     transform: translateY(-5px);
 }
+
+/* Livestreams */
+
+.livestreams {
+    color: #fff;
+    max-width: 1400px;
+    width: 100%;
+    padding: 40px 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+
+.live-badge {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.live-badge h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.live-badge h1 span{
+    border-bottom: 3px solid #9b51e0;
+    padding-bottom: 10px;
+}
+
+.live-date {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.live-time {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.live-countdown {
+    border: 2px solid #fff;
+    max-width: 300px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.live-countdown span {
+    font-size: 1rem;
+    font-style: italic;
+    color: #9b51e0;
+    margin-left: 5px;
+}
+
+.calendar {
+    background: #9b51e0;
+    border: none;
+    color: #fff;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    max-width: 280px;
+}
+
+.live-pic img {
+    width: 100%;
+    aspect-ratio: 16/10.5;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
