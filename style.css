@@ -311,7 +311,7 @@ aside {
     padding: 40px 40px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 100px;
+    justify-content: space-between;
 }
 
 .live-badge {
