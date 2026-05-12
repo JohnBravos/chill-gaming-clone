@@ -309,10 +309,10 @@ aside {
     color: #fff;
     max-width: 1400px;
     width: 100%;
-    padding: 40px 40px;
+    padding: 20px 20px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
 }
 
 .live-badge {
@@ -370,7 +370,7 @@ aside {
 
 .live-pic img {
     width: 100%;
-    aspect-ratio: 16/10.5;
+    aspect-ratio: 17/9;
     object-fit: cover;
     border-radius: 6px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
