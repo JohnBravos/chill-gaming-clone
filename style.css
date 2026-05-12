@@ -49,6 +49,7 @@ header {
     width: 100px;
     height: 50px;
     border: none;
+    border-radius: 3px;
     color: #fff;
     font-size: 1.2rem;
     font-weight: bold;
