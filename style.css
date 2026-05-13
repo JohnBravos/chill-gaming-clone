@@ -376,3 +376,100 @@ aside {
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
+/* Newsletter section */
+
+.newsletter {
+    max-width: 1400px;
+    border-radius: 5px;
+    color: #fff;
+    background: #9b51e0;
+    padding: 70px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.newsletter span i{
+    font-size: 6rem;
+    align-items: center;
+}
+
+.newsletter h1 {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+
+.registration-form {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.registration-form p {
+    font-size: 1.05rem;
+}
+
+.email-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.email-row input {
+    flex: 1;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: lighter;
+    border-style: none;
+}
+
+.register-btn {
+    padding: 12px 20px;
+    background: #000000;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.checkbox-wrapper {
+    text-align: left;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.checkbox-wrapper .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    background: transparent;
+}
+
+.checkbox-wrapper input:checked + .checkmark {
+    background: #000000;
+    border-color: #000000;
+}
+
+.checkbox-wrapper input:checked + .checkmark::after {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 14px;
+}
