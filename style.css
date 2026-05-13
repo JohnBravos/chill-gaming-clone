@@ -380,14 +380,14 @@ aside {
 
 .newsletter {
     max-width: 1400px;
+    width: 95%;
     border-radius: 5px;
     color: #fff;
     background: #9b51e0;
     padding: 70px 20px;
-    margin: auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 20px;
 }
