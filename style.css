@@ -473,3 +473,50 @@ aside {
     color: white;
     font-size: 14px;
 }
+
+/* Footer */
+
+.site-footer {
+    max-width: 1400px;
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 60px 60px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #fff;
+    background: #212121;
+    gap: 40px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 12px;
+}
+
+.footer-column li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.footer-column li a:hover {
+    color: #9b51e0;
+}
+
