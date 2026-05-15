@@ -478,7 +478,7 @@ aside {
 
 .site-footer {
     width: 100%;
-    padding: 60px;
+    padding: 60px 0 0 0;
     margin-top: 60px;
     color: #fff;
     background: #212121;
@@ -550,4 +550,15 @@ aside {
 .word-dot {
     color: #9b51e0;
 }
+
+.footer-outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #9b51e0;
+    width: 100%;
+    padding: 10px 50px;
+    margin-top: 50px;
+}
+
 
