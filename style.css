@@ -86,7 +86,7 @@ nav ul{
 }
 
 .push-right {
-    margin-left: auto;
+    margin-left: 50px;
 }
 
 nav ul a {
@@ -477,7 +477,6 @@ aside {
 /* Footer */
 
 .site-footer {
-    max-width: 1400px;
     width: 100%;
     border: 1px solid #fff;
     padding: 60px 60px;
