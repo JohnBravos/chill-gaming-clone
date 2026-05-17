@@ -620,3 +620,127 @@ aside {
 }
 
 
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-feed {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-section {
+        border: none;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .gaming-news {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .book-guide {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .book-guide span {
+        font-size: 1rem;
+    }
+
+    .book-guide h2 {
+        font-size: 1.5rem;
+    }
+
+    .book-guide p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        margin: 20px auto;
+    }
+  
+    .book-cover {
+    order: -1;
+    margin-top: 1rem;
+    }
+
+    .gaming-reviews {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .livestreams {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .live-badge h1 {
+        font-size: 1.7rem;
+    }
+
+    .live-date {
+        font-size: 1.4rem;
+    }
+
+    .live-countdown {
+        margin: auto;
+        font-size: 1.4rem;
+    }
+
+    .calendar {
+        margin: auto;
+        max-width: 280px;
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 95%;
+    }
+
+    .newsletter h1 {
+        font-size: 1.6rem;
+    }
+
+    .email-row {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+
+    .email-row input {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .register-btn {
+        max-width: 350px;
+        width: 100%;
+        font-size: 0.85rem;
+    }
+
+    .registration-form {
+        margin-left: 35px;
+    }
+
+    .checkbox-wrapper {
+        font-size: 0.85rem;
+    }
+
+}
+
+
