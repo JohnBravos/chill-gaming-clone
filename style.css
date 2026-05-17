@@ -707,8 +707,8 @@ aside {
     .newsletter {
         display: flex;
         flex-direction: column;
-        text-align: center;
         max-width: 95%;
+        align-items: center;
     }
 
     .newsletter h1 {
@@ -719,26 +719,28 @@ aside {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        
+        align-items: center;
     }
 
     .email-row input {
-        max-width: 350px;
-        width: 100%;
+        width: 350px;
     }
 
     .register-btn {
-        max-width: 350px;
-        width: 100%;
         font-size: 0.85rem;
+        width: 350px;
+        padding: 15px 0;
     }
 
     .registration-form {
-        margin-left: 35px;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
     }
 
     .checkbox-wrapper {
         font-size: 0.85rem;
+        width: 350px;
     }
 
 }
