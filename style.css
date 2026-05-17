@@ -177,7 +177,7 @@ aside {
     background: #111;
     border-radius: 10px;
     padding: 15px;
-    transition: transform 0.3s eases;
+    transition: transform 0.3s ease;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -285,7 +285,7 @@ aside {
     grid-template-columns: 1fr 1fr;
     max-width: 1400px;
     width: 100%;
-    margin: 170px auto;
+    margin: auto;
     padding: 0 30px;
     gap: 50px;
 }
@@ -315,7 +315,7 @@ aside {
     font-size: 1.5rem;
 }
 
-.btn {
+.book-review-btn {
     width: 120px;
     padding: 10px 0;
     cursor: pointer;
@@ -450,7 +450,6 @@ aside {
 
 .newsletter span i{
     font-size: 6rem;
-    align-items: center;
 }
 
 .newsletter h1 {
@@ -564,7 +563,7 @@ aside {
 .social-links a {
     display: inline-block;
     background: #9b51e0;
-    padding: 5px 5px;
+    padding: 5px;
 }
 
 .social-links a i {
@@ -663,7 +662,7 @@ aside {
         font-size: 1rem;
     }
 
-    .btn {
+    .book-review-btn {
         margin: 20px auto;
     }
   
@@ -723,24 +722,24 @@ aside {
     }
 
     .email-row input {
-        width: 350px;
+        width: 70%;
     }
 
     .register-btn {
         font-size: 0.85rem;
-        width: 350px;
+        width: 70%;
         padding: 15px 0;
     }
 
     .registration-form {
-        max-width: 100%;
+        width: 100%;
         align-items: center;
         text-align: center;
     }
 
     .checkbox-wrapper {
         font-size: 0.85rem;
-        max-width: 350px;
+        max-width: 70%;
     }
 
     .footer-inner {
@@ -756,10 +755,6 @@ aside {
 
     .footer-column ul li a {
         font-size: 1rem;
-    }
-
-    .slogan {
-        max-width: 80%
     }
 
     .slogan {
