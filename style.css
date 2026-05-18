@@ -677,19 +677,30 @@ aside {
 
     /* ===== Gaming News ===== */
 
+    .gaming-news-reviews-header {
+        font-size: 1.4rem;
+        margin: 40px 15px 0 15px;
+        padding: 0 0 10px 0;
+    }
+
     .gaming-news {
         display: flex;
         flex-direction: column;
+        gap: 20px;
+        padding: 0 15px;
     }
 
     .gaming-news > div {
         margin: 0 15px;
     }
 
+    /* ===== Book Guide ===== */
+
     .book-guide {
         display: flex;
         flex-direction: column;
         text-align: center;
+        padding: 0 15px;
     }
 
     .book-guide span {
@@ -713,15 +724,22 @@ aside {
     margin-top: 1rem;
     }
 
+    /* ===== Gaming Reviews ===== */
+
     .gaming-reviews {
         display: flex;
         flex-direction: column;
+        gap: 20px;
+        padding: 0 15px;
     }
+
+    /* ===== Livestreams ===== */
 
     .livestreams {
         display: flex;
         flex-direction: column;
         text-align: center;
+        padding: 0 15px;
     }
 
     .live-badge h1 {
@@ -745,11 +763,14 @@ aside {
         margin-bottom: 20px;
     }
 
+    /* ===== Newsletter ===== */
+
     .newsletter {
         display: flex;
         flex-direction: column;
         max-width: 95%;
         align-items: center;
+        padding: 20px 0;
     }
 
     .newsletter h1 {
@@ -761,6 +782,7 @@ aside {
         flex-direction: column;
         gap: 20px;
         align-items: center;
+        width: 100%;
     }
 
     .email-row input {
@@ -784,11 +806,14 @@ aside {
         max-width: 70%;
     }
 
+    /* ===== Footer ===== */
+
     .footer-inner {
         width: 100%;
         padding: 10px 20px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
 
     .footer-column {
@@ -796,7 +821,7 @@ aside {
     }
 
     .footer-column ul li a {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .slogan {
