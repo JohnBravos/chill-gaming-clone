@@ -295,6 +295,7 @@ aside {
     max-width: 1400px;
     width: 100%;
     margin: auto;
+    margin-top: 5rem;
     padding: 0 30px;
     gap: 50px;
 }
