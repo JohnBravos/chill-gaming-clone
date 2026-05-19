@@ -1005,6 +1005,36 @@ aside {
     }
 }
 
+/* ===== Laptops ===== */
+
+@media (min-width: 1025px) and (max-width: 1399px) {
+    .footer-inner {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px 20px;
+        gap: 20px;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .slogan {
+        grid-column: 1 / -1;
+        margin: 20px auto 0 auto;
+    }
+
+    .slogan p {
+        font-size: 2.8rem;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+}
+
 /* ===== LARGE DESKTOP ===== */
 @media (min-width: 1400px) {
     .main-feed,
