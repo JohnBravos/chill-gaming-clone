@@ -386,6 +386,8 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    height: 100%;
+    width: 100%;
 }
 
 .live-badge h1 {
@@ -968,7 +970,6 @@ aside {
         max-width: 80%;
         font-size: 1rem;
         padding: 10px 20px;
-        margin-bottom: 20px;
     }
 
     .live-pic img {
