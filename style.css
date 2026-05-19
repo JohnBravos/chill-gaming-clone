@@ -498,10 +498,12 @@ aside {
 
 .register-btn {
     padding: 12px 20px;
+    color: var(--text-white);
     background: var(--newsletter-dark-color);
     border: none;
     font-size: 1rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .checkbox-wrapper {
