@@ -26,7 +26,7 @@ body {
 /* ====== HEADER SECTION ====== */
 
 header {
-    color: #fff;
+    color: var(--text-white);
     display: flex;
     flex-direction:row;
     justify-content: space-between;
@@ -190,8 +190,6 @@ aside {
     padding: 15px;
     transition: transform 0.3s ease;
     flex: 1;
-    display: flex;
-    flex-direction: column;
 }
 
 .review-card:hover {
