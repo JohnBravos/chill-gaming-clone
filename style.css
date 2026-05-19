@@ -932,7 +932,8 @@ aside {
     }
 
     .book-cover img {
-        aspect-ratio: 5/5;
+        height: 100%;
+        object-fit: contain;
     }
 
     /* ===== Gaming Reviews ===== */
