@@ -1,0 +1,87 @@
+/* ======== Footer ========*/
+
+.site-footer {
+    width: 100%;
+    padding: 60px 0 0 0;
+    margin-top: 6rem;
+    color: var(--text-white);
+    background: var(--nav-background);
+}
+
+.footer-inner {
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: left;
+    gap: 7px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    background: var(--primary-purple);
+    padding: 5px;
+}
+
+.social-links a i {
+    font-size: 1rem;
+}
+
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 12px;
+}
+
+.footer-column li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-white);
+}
+
+.footer-column li a:hover {
+    color: var(--primary-purple);
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.slogan p {
+    font-size: 3.2rem;
+    font-weight: bold;
+    width: 100%;
+    text-shadow: 0 0 2px var(--text-white);
+}
+
+.word-dot {
+    color: var(--primary-purple);
+}
+
+.footer-outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--primary-purple);
+    width: 100%;
+    padding: 10px 50px;
+    margin-top: 3rem;
+}

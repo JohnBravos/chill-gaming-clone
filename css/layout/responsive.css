@@ -1,0 +1,417 @@
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 767px) {
+
+    /* ===== Header ===== */
+    header {
+        flex-direction: column;
+    }
+
+    .header-title h1 {
+        font-size: 2rem;
+    }
+
+    .header-title h2 {
+        font-size: 0.9rem;
+    }
+
+    /* ===== Navigation ===== */
+
+    nav ul {
+        gap: 20px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        padding: 15px 20px;
+    }
+
+    nav ul a {
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+
+    /* ===== Main Pgae ===== */
+    .main-feed {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .main-section {
+        border: none;
+        padding: 0 15px;
+    }
+
+    .main-section h1 {
+        font-size: 1.4rem;
+    }
+
+    .article-text {
+        font-size: 1rem;
+    }
+
+    /* ===== Aside (no display) ===== */
+
+    aside {
+        display: none;
+    }
+
+    /* ===== Gaming News ===== */
+
+    .gaming-news-reviews-header {
+        font-size: 1.4rem;
+        margin: 40px 15px 0 15px;
+        padding: 0 0 10px 0;
+    }
+
+    .gaming-news {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .gaming-news > div {
+        margin: 0 15px;
+    }
+
+    /* ===== Book Guide ===== */
+
+    .book-guide {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .book-guide span {
+        font-size: 1rem;
+    }
+
+    .book-guide h2 {
+        font-size: 1.5rem;
+    }
+
+    .book-guide p {
+        font-size: 1rem;
+    }
+
+    .book-review-btn {
+        margin: 20px auto;
+    }
+  
+    .book-cover {
+    order: -1;
+    margin-top: 1rem;
+    }
+
+    .book-cover img {
+        aspect-ratio: 10/5;
+    }
+
+    /* ===== Gaming Reviews ===== */
+
+    .gaming-reviews {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    /* ===== Livestreams ===== */
+
+    .livestreams {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .live-badge h1 {
+        font-size: 1.7rem;
+    }
+
+    .live-date {
+        font-size: 1.4rem;
+    }
+
+    .live-countdown {
+        margin: auto;
+        font-size: 1.4rem;
+    }
+
+    .calendar {
+        margin: auto;
+        max-width: 280px;
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+
+    /* ===== Newsletter ===== */
+
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .newsletter h1 {
+        font-size: 1.6rem;
+    }
+
+    .email-row {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .email-row input {
+        width: 70%;
+    }
+
+    .register-btn {
+        font-size: 0.85rem;
+        width: 70%;
+        padding: 15px 0;
+    }
+
+    .registration-form {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .checkbox-wrapper {
+        font-size: 0.85rem;
+        max-width: 70%;
+    }
+
+    /* ===== Footer ===== */
+
+    .footer-inner {
+        width: 100%;
+        padding: 10px 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .footer-column ul li a {
+        font-size: 0.9rem;
+    }
+
+    .slogan {
+        grid-column: 1 / -1;
+        margin: 20px auto 0 auto;
+    }
+
+    .slogan p {
+        font-size: 2.6rem;
+    }
+
+    .social-links {
+        font-size: 1rem;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+/* ===== TABLET RESPONSIVE ===== */ 
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* ===== Header ===== */
+    
+    .header h1{
+        font-size: 2.2rem;
+    }
+
+    .header-title h2 {
+        font-size: 1.1rem;
+    }
+
+    /* ===== Navigation ===== */
+
+    nav ul {
+        gap: 30px;
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    nav ul a {
+        font-size: 1.1rem;
+    }
+
+    /* Main Page */
+
+    .main-feed {
+        gap: 30px;
+        grid-template-columns: 2fr 1fr;
+        padding: 0 20px;
+    }
+
+    .main-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .article-text {
+        font-size: 1.2rem;
+    }
+
+    /* ===== Aside ===== */
+
+    .aside-header {
+        font-size: 1.3rem;
+    }
+
+    /* ====== Gaming News ===== */
+    
+    .gaming-news {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 0 20px;
+    }
+
+    .gaming-news-reviews-header {
+        font-size: 1.6rem;
+        margin: 40px 15px 0 15px;
+        padding: 0 0 10px 0;
+    }
+
+    /* ===== Book Guide ===== */
+
+    .book-guide {
+        padding: 20px 20px;
+    }
+    
+    .book-guide h2 {
+        font-size: 2rem;
+    }
+
+    .book-guide p {
+        font-size: 1.2rem;
+    }
+
+    .book-cover img {
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* ===== Gaming Reviews ===== */
+    .gaming-reviews {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 0 20px;
+    }
+
+    /* ===== Livestreams ===== */
+
+    .live-badge h1 {
+        font-size: 1.5rem;
+    }
+
+    .live-date {
+        font-size: 1rem;
+    }
+
+    .live-countdown {
+        font-size: 1.4rem;
+    }
+
+    .live-countdown span {
+        margin: 0 10px 0 5px;
+    }
+
+    .calendar {
+        max-width: 80%;
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .live-pic img {
+        height: 100%;
+    }
+
+    /* ===== Footer ===== */
+    .footer-inner {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px 20px;
+        gap: 20px;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .footer-column ul li a {
+        font-size: 1.1rem;
+    }
+
+    .slogan {
+        grid-column: 1 / -1;
+        margin: 20px auto 0 auto;
+    }
+
+    .slogan p {
+        font-size: 2.8rem;
+    }
+
+    .social-links {
+        font-size: 1rem;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+/* ===== Laptops ===== */
+
+@media (min-width: 1025px) and (max-width: 1399px) {
+    .footer-inner {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px 20px;
+        gap: 20px;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .slogan {
+        grid-column: 1 / -1;
+        margin: 20px auto 0 auto;
+    }
+
+    .slogan p {
+        font-size: 2.8rem;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+}
+
+/* ===== LARGE DESKTOP ===== */
+@media (min-width: 1400px) {
+    .main-feed,
+    .gaming-news,
+    .gaming-reviews,
+    .book-guide,
+    .livestreams,
+    .gaming-news-reviews-header {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

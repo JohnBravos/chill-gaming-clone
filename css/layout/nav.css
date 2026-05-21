@@ -1,0 +1,38 @@
+/* ====== NAVBAR ====== */
+
+nav {
+    background: var(--nav-background);
+    border-bottom: 7px solid var(--primary-purple);
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 25px 20px;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.push-right {
+    margin-left: 50px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--text-white);
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+    color: var(--primary-purple);
+}
+
+nav ul li:first-child a {
+    color: var(--primary-purple);
+    padding: 10px 15px;
+}
