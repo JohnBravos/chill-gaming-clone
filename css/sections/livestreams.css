@@ -1,0 +1,75 @@
+/* ======== LIVESTREAMS ======== */
+
+.livestreams {
+    color: var(--text-white);
+    max-width: 1400px;
+    width: 100%;
+    padding: 60px 20px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.live-badge {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.live-badge h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.live-badge h1 span{
+    border-bottom: 3px solid var(--primary-purple);
+    padding-bottom: 10px;
+}
+
+.live-date {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.live-time {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.live-countdown {
+    border: 2px solid var(--text-white);
+    max-width: 300px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.live-countdown span {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--primary-purple);
+    margin-left: 5px;
+}
+
+.calendar {
+    background: var(--primary-purple);
+    border: none;
+    color: var(--text-white);
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    max-width: 280px;
+}
+
+.live-pic img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 17/9;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
