@@ -78,4 +78,42 @@ let searchArticles = (arr, key) => {
     return newArr;
 }
 
-console.log(searchArticles(articles, "remedy"));
+let getStats = (arr) => {
+    let totalArt = arr.length;
+    
+    let byCat = arr.reduce((result, article) => {
+        if (!result[article.category]) {
+            result[article.category] = 1;
+        } else {
+            result[article.category] += 1;
+        }
+
+        return result;
+    }, {});
+
+    let articAuthors = arr.reduce((totalAuthors, article) => {
+        if (!totalAuthors.includes(article.author)) {
+            totalAuthors.push(article.author);
+        }
+    
+        return totalAuthors;
+    }, []);
+
+    let latestArt = arr.sort((a, b) => a.date - b.date).slice(0, 1);
+
+    return {
+        totalArticles: totalArt, 
+        byCategory: byCat,
+        authors: articAuthors,
+        latestArticle: latestArt
+    };
+}
+
+let getlatestArticles = (arr, n) => {
+    let latestArt = arr.sort((a, b) => a.date - b.date).slice(0, n);
+    return latestArt;
+}
+
+console.log(getStats(articles));
+
+
