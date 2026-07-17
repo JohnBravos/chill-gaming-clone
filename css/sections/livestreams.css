@@ -48,10 +48,17 @@
 }
 
 .live-countdown span {
+    font-size: 2rem; /* μεγάλοι αριθμοί */
+    font-weight: bold;
+    color: var(--text-white);
+}
+
+.live-countdown small {
     font-size: 1rem;
     font-style: italic;
     color: var(--primary-purple);
     margin-left: 5px;
+    margin-right: 10px;
 }
 
 .calendar {
