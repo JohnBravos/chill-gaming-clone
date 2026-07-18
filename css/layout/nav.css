@@ -4,6 +4,7 @@ nav {
     background: var(--nav-background);
     border-bottom: 7px solid var(--primary-purple);
     width: 100%;
+    position: relative;
 }
 
 nav ul{
@@ -35,4 +36,23 @@ nav ul a:hover {
 nav ul li:first-child a {
     color: var(--primary-purple);
     padding: 10px 15px;
+}
+
+#search-results {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #1a1a1a;
+    width: 350px;
+    z-index: 100;
+    padding: 10px;
+    border: 1px solid var(--primary-purple);
+}
+
+#search-results p {
+    color: white;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    cursor: pointer;
+    margin: 0;
 }

@@ -1,3 +1,7 @@
+const searchIcon = document.getElementById("search-icon");
+const searchInput = document.getElementById("search-input");
+const searchResults = document.getElementById("search-results");
+
 // Dynamic Gaming News
 const newsContainer = document.getElementById("gaming-news-container");
 newsContainer.innerHTML = "";
@@ -32,7 +36,7 @@ function getNextLivestream() {
     const now = new Date();
     const target = new Date();
 
-    // Find next Tuesday or Thursday
+    // Find next Tuesday(2) or Thursday(4)
     const day = now.getDay();
 
     let daysUntilNext;
@@ -67,3 +71,24 @@ function updateCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+searchIcon.addEventListener('click', function(e) {
+    e.preventDefault(); // dont use #
+    if (searchInput.style.display === "none") {
+        searchInput.style.display = "block";
+    } else {
+        searchInput.style.display = "none";
+    }
+})
+
+searchInput.addEventListener("input", function() {
+    let inputValue = searchInput.value;
+    let results = searchArticles(articles, inputValue);
+
+    searchResults.style.display = "block";
+    searchResults.innerHTML = "";
+
+    results.forEach(article => {
+        searchResults.innerHTML += `<p>${article.title}</p>`
+    });
+});

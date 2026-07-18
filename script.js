@@ -71,11 +71,11 @@ let filterByCategory = (arr, cat) => {
 //     return result;
 // }
 
-// let searchArticles = (arr, key) => {
-//     let newArr = arr.filter(article => article.title.toLowerCase().includes(key.toLowerCase()))
+let searchArticles = (arr, key) => {
+    let newArr = arr.filter(article => article.title.toLowerCase().includes(key.toLowerCase()))
         
-//     return newArr;
-// }
+    return newArr;
+}
 
 // let getStats = (arr) => {
 //     let totalArt = arr.length;
