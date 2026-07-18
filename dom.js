@@ -83,6 +83,13 @@ searchIcon.addEventListener('click', function(e) {
 
 searchInput.addEventListener("input", function() {
     let inputValue = searchInput.value;
+
+    if (inputValue === "") {
+        searchResults.style.display = "none";
+        searchResults.innerHTML = "";
+        return;
+    }
+
     let results = searchArticles(articles, inputValue);
 
     searchResults.style.display = "block";
