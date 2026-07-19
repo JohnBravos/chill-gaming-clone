@@ -2,6 +2,10 @@ const searchIcon = document.getElementById("search-icon");
 const searchInput = document.getElementById("search-input");
 const searchResults = document.getElementById("search-results");
 
+const registerBtn = document.getElementById("register-btn");
+const emailInput = document.getElementById("email-input");
+const newsletterMsg = document.getElementById("newsletter-msg");
+
 // Dynamic Gaming News
 const newsContainer = document.getElementById("gaming-news-container");
 newsContainer.innerHTML = "";
@@ -72,6 +76,8 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
+// Search articles
+
 searchIcon.addEventListener('click', function(e) {
     e.preventDefault(); // dont use #
     if (searchInput.style.display === "none") {
@@ -98,4 +104,20 @@ searchInput.addEventListener("input", function() {
     results.forEach(article => {
         searchResults.innerHTML += `<p>${article.title}</p>`
     });
+});
+
+// Newsletter validation 
+registerBtn.addEventListener('click', function() {
+    newsletterMsg.innerHTML = "";
+
+    if (emailInput.value === "") {
+        newsletterMsg.innerHTML = "";
+        return;
+    }
+
+    if (emailInput.value.includes("@") && emailInput.value.includes(".")) {
+        newsletterMsg.innerHTML += "<p>Email is valid!</p>"
+    } else {
+        newsletterMsg.innerHTML += "<p>Email is not valid!</p>"
+    }
 });
