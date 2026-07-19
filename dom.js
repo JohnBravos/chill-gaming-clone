@@ -110,14 +110,14 @@ searchInput.addEventListener("input", function() {
 registerBtn.addEventListener('click', function() {
     newsletterMsg.innerHTML = "";
 
-    if (emailInput.value === "") {
-        newsletterMsg.innerHTML = "";
+   if (emailInput.value === "") {
+        newsletterMsg.innerHTML = "Please add an email.";
         return;
     }
 
     if (emailInput.value.includes("@") && emailInput.value.includes(".")) {
-        newsletterMsg.innerHTML += "<p>Email is valid!</p>"
+        newsletterMsg.innerHTML += `<p class="success">Email is valid!</p>`
     } else {
-        newsletterMsg.innerHTML += "<p>Email is not valid!</p>"
+        newsletterMsg.innerHTML += `<p class="error">Email is not valid!</p>`
     }
 });

@@ -96,3 +96,16 @@
     color: var(--text-white);
     font-size: 14px;
 }
+
+#newsletter-msg p {
+    font-weight: 1000;
+    margin-top: 10px;
+}
+
+#newsletter-msg p.success {
+    color: #4caf50;
+}
+
+#newsletter-msg p.error {
+    color: #f44336;
+}
