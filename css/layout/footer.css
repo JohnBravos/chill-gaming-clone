@@ -85,3 +85,18 @@
     padding: 10px 50px;
     margin-top: 3rem;
 }
+
+#back-to-top {
+    position: fixed;
+    bottom: 45px;
+    right: 30px;
+    background: var(--primary-purple);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    border-radius: 4px;
+}

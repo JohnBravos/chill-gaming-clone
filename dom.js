@@ -6,6 +6,8 @@ const registerBtn = document.getElementById("register-btn");
 const emailInput = document.getElementById("email-input");
 const newsletterMsg = document.getElementById("newsletter-msg");
 
+const backToTop = document.getElementById("back-to-top");
+
 // Dynamic Gaming News
 const newsContainer = document.getElementById("gaming-news-container");
 newsContainer.innerHTML = "";
@@ -111,7 +113,7 @@ registerBtn.addEventListener('click', function() {
     newsletterMsg.innerHTML = "";
 
    if (emailInput.value === "") {
-        newsletterMsg.innerHTML = "Please add an email.";
+        newsletterMsg.innerHTML = `<p class="empty">Please add an email.</p>`;
         return;
     }
 
@@ -125,3 +127,16 @@ registerBtn.addEventListener('click', function() {
 emailInput.addEventListener("input", function() {
     newsletterMsg.innerHTML = "";
 })
+
+// Back to top button
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 300) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
+});
+
+backToTop.addEventListener('click', function() {
+    window.scroll(0, 0);
+});
