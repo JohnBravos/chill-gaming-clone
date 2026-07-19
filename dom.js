@@ -8,6 +8,8 @@ const newsletterMsg = document.getElementById("newsletter-msg");
 
 const backToTop = document.getElementById("back-to-top");
 
+const themeToggle = document.getElementById("theme-toggle");
+
 // Dynamic Gaming News
 const newsContainer = document.getElementById("gaming-news-container");
 newsContainer.innerHTML = "";
@@ -79,14 +81,11 @@ updateCountdown();
 setInterval(updateCountdown, 1000);
 
 // Search articles
-
 searchIcon.addEventListener('click', function(e) {
     e.preventDefault(); // dont use #
-    if (searchInput.style.display === "none") {
-        searchInput.style.display = "block";
-    } else {
-        searchInput.style.display = "none";
-    }
+    const searchLi = searchInput.parentElement;
+    searchInput.classList.toggle("active");
+    searchLi.classList.toggle("visible");
 })
 
 searchInput.addEventListener("input", function() {
@@ -140,3 +139,14 @@ window.addEventListener("scroll", function() {
 backToTop.addEventListener('click', function() {
     window.scroll(0, 0);
 });
+
+// Theme change
+themeToggle.addEventListener('click', function() {
+    document.body.classList.toggle("light-mode");
+
+    if (document.body.classList.contains("light-mode")) {
+        themeToggle.textContent = "☀️";
+    } else {
+        themeToggle.textContent = "🌙";
+    }
+})

@@ -9,3 +9,16 @@
     --card-background: #111;
     --newsletter-dark-color: #000000;
 }
+
+body.light-mode {
+    --primary-purple: #9b51e0;
+    --text-white: #111;
+    --nav-background: #f0f0f0;
+    --body-background: #ffffff;
+    --article-text: #333;
+    --text-gray: #555;
+    --card-background: #e8e8e8;
+    --newsletter-dark-color: #f0f0f0;
+    background: var(--body-background);
+    color: var(--text-white);
+}
