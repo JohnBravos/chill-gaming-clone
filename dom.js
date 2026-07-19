@@ -144,9 +144,12 @@ backToTop.addEventListener('click', function() {
 themeToggle.addEventListener('click', function() {
     document.body.classList.toggle("light-mode");
 
+    const icon = themeToggle.querySelector("i");
     if (document.body.classList.contains("light-mode")) {
-        themeToggle.textContent = "☀️";
+        icon.classList.replace("fa-moon", "fa-sun");
+        icon.style.color = "black";
     } else {
-        themeToggle.textContent = "🌙";
+        icon.classList.replace("fa-sun", "fa-moon");
+        icon.style.color = "white";
     }
 })
