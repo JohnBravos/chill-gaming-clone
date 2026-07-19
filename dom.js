@@ -121,3 +121,7 @@ registerBtn.addEventListener('click', function() {
         newsletterMsg.innerHTML += `<p class="error">Email is not valid!</p>`
     }
 });
+
+emailInput.addEventListener("input", function() {
+    newsletterMsg.innerHTML = "";
+})
